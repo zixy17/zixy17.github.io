@@ -10,4 +10,4 @@ I am broadly interested in database and Machine Learning System.
 
 Low Rank Approximation for Learned Query Optimization.  \
 aiDM @ SIGMOD '24 \
-**Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [pdf]
+**Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [[pdf]](https://github.com/zixy17/zixy17.github.io/blob/main/docs/pdf/aiDM.pdf)
