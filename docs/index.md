@@ -2,7 +2,7 @@
 
 Hi, I am Zixuan (Eve) Yi. I am a first-year CS PhD student at University of Pennsylvania, advised by [Ryan Marcus](https://rmarcus.info/blog/) and [Zack Ives](https://www.cis.upenn.edu/~zives/). Before this, I earned my bachelor degree in CS from Tsinghua University.
 
-You can find me at Twitter [@yi_zixuan](https://twitter.com/yi_zixuan) or email me [zixy@seas.upenn.edu](mailto:zixy@seas.upenn.edu).
+You can find me at Twitter [@yi_zixuan](https://twitter.com/yi_zixuan),  [linkedin](https://www.linkedin.com/in/zixuan-yi-073ab01b0/) or email me [zixy@seas.upenn.edu](mailto:zixy@seas.upenn.edu). 
 
 ## News
 
