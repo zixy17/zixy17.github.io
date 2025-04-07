@@ -16,8 +16,10 @@ I am broadly interested in Databases and Machine Learning System.
 
 ## Publications
 
-Low Rank Approximation for Learned Query Optimization.  \
-aiDM@SIGMOD'24 \
-**Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [[paper]](https://zixy17.github.io/pdf/aiDM.pdf)[[poster]](https://zixy17.github.io/pdf/NEDB2024.pdf)
+LimeQO: Low-Rank Learning for Offline Query Optimization.  \
+SIGMOD'25 \
+**Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [[paper]](https://zixy17.github.io/pdf/limeqo_sigmod25.pdf)[[poster]](https://zixy17.github.io/pdf/NEDB2024.pdf) [[code]](https://github.com/zixy17/LimeQO)
 
-<em>Regressions and large overhead time are the major concerns when machine learning based query optimizers are put into production system. We proposed the first "workload-level" query optimizer that optimize the whole workload all at once without any regressions. Leveraging the similarities between queries, we cast the problem as low-rank matrix completion - using this pure linear method gives us 100x overhead time gain!</em>
+<em>Regressions and large overhead time are the major concerns when machine learning based query optimizers are put into production system. We proposed the first "workload-level" query optimizer that optimize the whole workload all at once without any regressions. Leveraging the similarities between queries, we cast the problem as low-rank matrix completion - using this pure linear method gives us 100x overhead time gain! Try it out at [LimeQO](https://github.com/zixy17/LimeQO/limeqo.ipynb).</em>
+
+
