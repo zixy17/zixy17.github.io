@@ -6,7 +6,7 @@ You can find me at Twitter [@yi_zixuan](https://twitter.com/yi_zixuan),  [linked
 
 ## News
 
-🇩🇪 I will be attending the SIGMOD'25 Conference at Berlin, Germany. Happy to chat!
+🇩🇪 I will be attending the SIGMOD'25 Conference at Berlin, Germany.
 
 ## Research Interests
 
@@ -14,7 +14,7 @@ I am broadly interested in Machine Learning and Systems.
 
 ## Publications
 
-LimeQO: Low-Rank Learning for Offline Query Optimization.  \
+**LimeQO: Low-Rank Learning for Offline Query Optimization.** \
 **SIGMOD'25** \
 **Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [[code]](https://github.com/zixy17/LimeQO)[[paper]](https://zixy17.github.io/pdf/limeqo_sigmod25.pdf)[[poster]](https://zixy17.github.io/pdf/NEDB2024.pdf) 
 
