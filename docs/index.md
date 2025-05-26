@@ -4,7 +4,7 @@ Hi, I am Zixuan (Eve) Yi. I am a second-year CS PhD student at University of Pen
 
 You can find me at Twitter [@yi_zixuan](https://twitter.com/yi_zixuan),  [linkedin](https://www.linkedin.com/in/zixuan-yi-073ab01b0/) or email me [zixy@seas.upenn.edu](mailto:zixy@seas.upenn.edu). 
 
-Feel free to drop me an email if you want to chat about research 😄 / or anything else on your mind.
+I'm always happy to chat — feel free to drop me an email about research 😄 or anything else on your mind.
 
 ## News
 
