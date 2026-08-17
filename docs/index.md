@@ -48,7 +48,7 @@ I’m always happy to chat about research, collaborations, or interesting proble
 
 ## News
 - ☕️ **VLDB'26 (Aug 31 - Sep 4):** I’ll be in **Boston** for VLDB'26. DM me if you want to grab coffee and chat!
-- 🧋 **COLM'26 (October 6 - 9):** I’ll be in **SF** for COLM'26. Looking forward to meeting researchers working on LLM agents, agentic systems, and related areas!
+- 🧋 **COLM'26 (October 6 - 9):** I’ll be in **SF** for COLM'26. Looking forward to meeting people interested in LLM agents, agentic systems, and related areas!
 - 🎉 **Data Canvas** was accepted to **COLM'26**! 
 - 🔦 **Theory-Level Autoformalization** was selected as a **Spotlight** at the **ICML'26 Position Track**.
 
