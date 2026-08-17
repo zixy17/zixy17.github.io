@@ -14,4 +14,9 @@ twitter:
   username: yi_zixuan
   card: summary
 
+# Visitor analytics. Sign up at https://www.goatcounter.com/ and pick a site
+# code; your dashboard then lives at https://<code>.goatcounter.com/. Uncomment
+# the line below with that code to switch analytics on.
+# goatcounter: your-code-here
+
 theme: jekyll-theme-minimal

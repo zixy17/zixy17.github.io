@@ -61,5 +61,15 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+
+    {% comment %}
+      Visitor analytics via GoatCounter. Nothing is loaded unless `goatcounter`
+      is set in _config.yml, so the site stays script-free until you opt in.
+      No cookies are set and no IP addresses are stored.
+    {% endcomment %}
+    {% if site.goatcounter %}
+    <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    {% endif %}
   </body>
 </html>
