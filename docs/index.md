@@ -1,3 +1,10 @@
+---
+layout: default
+# `image` powers og:image / twitter:image — jekyll-seo-tag reads it from the
+# page, not from _config.yml.
+image: /img/photo.jpg
+---
+
 <style>
 details.tldr {
   margin: 0 0 1.6em 0;
@@ -31,8 +38,6 @@ details.tldr > p {
 
 👋 Hi! I am Zixuan (Eve) Yi, a third-year PhD student in CS at the University of Pennsylvania, advised by [Ryan Marcus](https://rmarcus.info/blog/) and [Zack Ives](https://www.cis.upenn.edu/~zives/). Before this, I earned my bachelor degree in CS from Tsinghua University.
 
-I work at the intersection of **machine learning and systems**, with a growing focus on building **efficient and reliable AI systems**.
-
 I’m always happy to chat about research, collaborations, or interesting problems in ML and systems. Feel free to [reach out](mailto:zixy@upenn.edu)! 😄
 
 ## News
@@ -44,12 +49,12 @@ I’m always happy to chat about research, collaborations, or interesting proble
 
 ## Research Interests
 
-I am broadly interested in building intelligent systems that are **efficient, adaptive, and reliable in real-world environments**. My previous works explored how **machine learning can make systems more intelligent**, and how **systems techniques can make AI applications more efficient and reliable**. 
+I work at the intersection of **machine learning and systems**: using ML to make systems more intelligent, and systems techniques to make AI applications **efficient and reliable in real-world environments**.
 
-In particular, I’m interested in three broad questions:
-- **Learning & Adaptation:** How can intelligent systems learn from experience and adapt to new tasks, environments, and feedback?
-- **Efficiency:** How can we make learning and decision-making efficient when computation, interaction, or evaluation is expensive?
-- **Reliability & Control:** How can we make intelligent systems easier to understand, steer, and correct when they make mistakes?
+Three questions run through my work:
+- **Learning & Adaptation:** How can systems learn from their own execution history and adapt to new workloads and feedback? *(LimeQO, LLMSteer)*
+- **Efficiency:** How can learning and decision-making stay cheap when every trial costs a real execution? *(LimeQO)*
+- **Reliability & Control:** How can we tell where an intelligent system went wrong, and repair just that part? *(Data Canvas)*
 
 
 ## Publications
@@ -67,6 +72,19 @@ In particular, I’m interested in three broad questions:
 </details>
 
 
+**Theory-Level Autoformalization: From Isolated Statements to Unified Formal Knowledge Bases** \
+**ICML'26 Position Track (🔦Spotlight)** \
+Marcus J Min, Mike He, Zhaoyu Li, **Zixuan Yi**, Sharad Malik, Aarti Gupta, Xujie Si, Osbert Bastani 
+[[code]](https://github.com/marcusm117/Awesome-Autoformalization) [[paper]](https://arxiv.org/pdf/2607.13292)
+
+<details class="tldr" markdown="1">
+<summary>Should autoformalization build whole theories instead of translating isolated statements?</summary>
+
+*Most autoformalization (turning informal math into machine-checkable formal math) assumes that the surrounding definitions, notation, lemmas, and dependencies already exist. We argue for **theory-level autoformalization**: constructing coherent formal libraries and their dependency structure, rather than treating each statement as an independent translation problem.*
+
+</details>
+
+
 **LimeQO: Low-Rank Learning for Offline Query Optimization.** \
 **SIGMOD'25** \
 **Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [[code]](https://github.com/zixy17/LimeQO)[[paper]](https://zixy17.github.io/pdf/limeqo_sigmod25.pdf)[[poster]](https://zixy17.github.io/pdf/limeqo-poster.pdf) 
@@ -75,18 +93,6 @@ In particular, I’m interested in three broad questions:
 <summary>Can we learn good decisions across an entire workload without exhaustively evaluating every possibility?</summary>
 
 *Learning good optimization decisions can require many expensive system executions. **LimeQO treats an entire workload as a partially observed low-rank matrix**, allowing information from a small number of executions to generalize across queries and guide where exploration is most useful, dramatically reducing learning overhead while avoiding regressions. **Try it out at [LimeQO](https://github.com/zixy17/LimeQO/blob/main/limeqo.ipynb)**.*
-
-</details>
-
-**Theory-Level Autoformalization: From Isolated Statements to Unified Formal Knowledge Bases** \
-**ICML'26 Position Track (🔦Spotlight)** \
-Marcus J Min, Mike He, Zhaoyu Li, **Zixuan Yi**, Sharad Malik, Aarti Gupta, Xujie Si, Osbert Bastani 
-[[code]](https://github.com/marcusm117/Awesome-Autoformalization) [[paper]](https://arxiv.org/pdf/2607.13292)
-
-<details class="tldr" markdown="1">
-<summary>Autoformalization should build theories, not just translate isolated statements.</summary>
-
-*Most autoformalization (turning informal math into machine-checkable formal math) assumes that the surrounding definitions, notation, lemmas, and dependencies already exist. We argue for **theory-level autoformalization**: constructing coherent formal libraries and their dependency structure, rather than treating each statement as an independent translation problem.*
 
 </details>
 

@@ -1,13 +1,16 @@
 title: Zixuan (Eve) Yi
 logo: /img/photo.jpg
+
+# `tagline` is what jekyll-seo-tag appends to the <title>; keep it short.
+tagline: PhD Student @ UPenn — Machine Learning × Data × Systems
+
+# `description` is the <meta name="description"> shown in search results.
 description: >-
-  <a href="mailto:zixy@upenn.edu">zixy@upenn.edu</a><br>
-  <strong>PhD Student @ UPenn</strong><br>
-  <strong>Machine Learning &times; Data &times; Systems</strong><br>
-  <a href="https://scholar.google.com/citations?user=yN_59vUAAAAJ&amp;hl=en">Google Scholar</a> &middot;
-  <a href="https://github.com/zixy17">GitHub</a> &middot;
-  <a href="https://twitter.com/yi_zixuan">Twitter</a> &middot;
-  <a href="https://www.linkedin.com/in/zixuan-yi-073ab01b0/">LinkedIn</a> &middot;
-  <a href="mailto:zixy@upenn.edu">Email</a>
+  Zixuan (Eve) Yi is a PhD student in computer science at the University of
+  Pennsylvania, working at the intersection of machine learning and systems on
+  efficient and reliable AI systems.
+
+twitter:
+  card: summary
 
 theme: jekyll-theme-minimal
