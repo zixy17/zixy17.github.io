@@ -55,7 +55,7 @@ I’m always happy to chat about research, collaborations, or interesting proble
 
 ## Research Interests
 
-I am broadly interested in building intelligent systems that are **efficient, adaptive, and reliable in real-world environments**. My previous works explored how **machine learning can make systems more intelligent**, and how **systems techniques can make AI applications more efficient and reliable**.
+I am broadly interested in building intelligent systems that are **efficient, adaptive, and reliable in real-world environments**. My previous works explored how *machine learning can make systems more intelligent*, and how *systems techniques can make AI applications more efficient and reliable*.
 
 I’m interested in three broad questions:
 - **Learning & Adaptation:** How can intelligent systems learn from experience and adapt to new tasks, environments, and feedback?
@@ -84,7 +84,7 @@ Marcus J Min, Mike He, Zhaoyu Li, **Zixuan Yi**, Sharad Malik, Aarti Gupta, Xuji
 [[code]](https://github.com/marcusm117/Awesome-Autoformalization) [[paper]](https://arxiv.org/pdf/2607.13292)
 
 <details class="tldr" markdown="1">
-<summary>Should autoformalization build whole theories instead of translating isolated statements?</summary>
+<summary>Autoformalization should build theories, not just translate isolated statements.</summary>
 
 *Most autoformalization (turning informal math into machine-checkable formal math) assumes that the surrounding definitions, notation, lemmas, and dependencies already exist. We argue for **theory-level autoformalization**: constructing coherent formal libraries and their dependency structure, rather than treating each statement as an independent translation problem.*
 
@@ -118,7 +118,7 @@ Peter Akioyamen, **Zixuan Yi**, Ryan Marcus [[code]](https://github.com/peter-ai
 ## Experiences
 
 **Microsoft** Research Intern @ [MSR](https://www.microsoft.com/en-us/research/group/datasystems/), 2026 Summer \
-*Worked on efficient decision-making under expensive execution feedback, including cost-aware validation and adaptive evaluation strategies.*
+*Developed cost-aware strategies for identifying high-performing execution configurations under expensive and censored feedback.*
 
 **Google** Student Researcher @ [SRG](https://techsysinfra.google/research/srg/), 2024 Summer \
 *Worked on lightweight online learning from historical execution behavior for efficient adaptation on real-world workloads.*
