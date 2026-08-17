@@ -1,6 +1,10 @@
 <style>
 details.tldr {
-  margin: 0.4em 0 1.2em 0;
+  margin: 0 0 1.6em 0;
+}
+/* close the gap between a publication's author line and its TL;DR */
+p:has(+ details.tldr) {
+  margin-bottom: 0.2em;
 }
 details.tldr > summary {
   cursor: pointer;
@@ -32,13 +36,9 @@ I work at the intersection of **machine learning and systems**, with a growing f
 I’m always happy to chat about research, collaborations, or interesting problems in ML and systems. Feel free to [reach out](mailto:zixy@upenn.edu)! 😄
 
 ## News
-
 - ☕️ **VLDB'26 (Aug 31 - Sep 4):** I’ll be in **Boston** for VLDB'26. DM me if you want to grab coffee and chat!
-
 - 🧋 **COLM'26 (October 6 - 9):** I’ll be in **SF** for COLM'26. Looking forward to meeting researchers working on LLM agents, agentic systems, and related areas!
-
 - 🎉 **Data Canvas** was accepted to **COLM'26**! 
-
 - 🔦 **Theory-Level Autoformalization** was selected as a **Spotlight** at the **ICML'26 Position Track**.
 
 
