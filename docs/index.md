@@ -1,7 +1,27 @@
-# Zixuan (Eve) Yi
-**PhD Student @ UPenn · Machine Learning × Data × Systems**
-
-[Google Scholar](https://scholar.google.com/citations?user=yN_59vUAAAAJ&hl=en) · [GitHub](https://github.com/zixy17) · [Twitter](https://twitter.com/yi_zixuan) · [LinkedIn](https://www.linkedin.com/in/zixuan-yi-073ab01b0/) · [Email](mailto:zixy@seas.upenn.edu)
+<style>
+details.tldr {
+  margin: 0.4em 0 1.2em 0;
+}
+details.tldr > summary {
+  cursor: pointer;
+  list-style: none;
+  font-style: italic;
+  color: #444;
+}
+details.tldr > summary::-webkit-details-marker { display: none; }
+details.tldr > summary::before {
+  content: "▸ ";
+  color: #999;
+  font-style: normal;
+}
+details.tldr[open] > summary::before { content: "▾ "; }
+details.tldr > summary:hover { color: #000; }
+details.tldr > p {
+  margin: 0.5em 0 0 1.1em;
+  font-style: italic;
+  color: #555;
+}
+</style>
 
 ## About Me
 
@@ -9,17 +29,17 @@
 
 I work at the intersection of **machine learning and systems**, with a growing focus on building **efficient and reliable AI systems**.
 
-I’m always happy to chat about research, collaborations, or interesting problems in ML and systems. Feel free to reach out! 😄
+I’m always happy to chat about research, collaborations, or interesting problems in ML and systems. Feel free to [reach out](mailto:zixy@upenn.edu)! 😄
 
 ## News
 
-☕️ **VLDB'26 (Aug 31 - Sep 4):** I’ll be in **Boston** for VLDB'26. If you’re attending too, feel free to reach out — I’d love to grab coffee and chat!
+- ☕️ **VLDB'26 (Aug 31 - Sep 4):** I’ll be in **Boston** for VLDB'26. DM me if you want to grab coffee and chat!
 
-🧋 **COLM'26 (October 6 - 9):** I’ll be in **SF** for COLM'26. Looking forward to meeting researchers working on LLM agents, agentic systems, and related areas!
+- 🧋 **COLM'26 (October 6 - 9):** I’ll be in **SF** for COLM'26. Looking forward to meeting researchers working on LLM agents, agentic systems, and related areas!
 
-🎉 **Data Canvas** was accepted to **COLM'26**! 
+- 🎉 **Data Canvas** was accepted to **COLM'26**! 
 
-🔦 **Theory-Level Autoformalization** was selected as a **Spotlight** at the **ICML'26 Position Track**.
+- 🔦 **Theory-Level Autoformalization** was selected as a **Spotlight** at the **ICML'26 Position Track**.
 
 
 ## Research Interests
@@ -37,30 +57,51 @@ In particular, I’m interested in three broad questions:
 **Data Canvas: A Provenance-Guided Harness for Agentic Data Engineering** \
 **COLM'26** \
 **Zixuan Yi**, Yuanming Shao, Shaun Wallace, Zachary Ives, Ryan Marcus \
-*Code and paper comming soon!*
+*Code and paper coming soon!*
 
-*LLM agents can execute increasingly complex workflows, but their failures are often difficult to inspect or correct. **Data Canvas** wraps agent execution in structured semantic operators and tracks fine-grained provenance across actions and outputs. This lets sparse feedback be traced back to responsible reasoning steps and enables targeted repair instead of rerunning the entire agent workflow.*
+<details class="tldr" markdown="1">
+<summary>When an agent goes wrong, can we identify the responsible step and repair only what it affected?</summary>
+
+*Agent workflows are difficult to inspect and repair when their outputs come from long, opaque execution traces. Data Canvas structures agent execution into semantic operators and tracks fine-grained provenance, allowing feedback to be traced to the responsible computation, propagated to related outputs, and repaired by replaying only the affected parts of the workflow.*
+
+</details>
 
 
 **LimeQO: Low-Rank Learning for Offline Query Optimization.** \
 **SIGMOD'25** \
 **Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [[code]](https://github.com/zixy17/LimeQO)[[paper]](https://zixy17.github.io/pdf/limeqo_sigmod25.pdf)[[poster]](https://zixy17.github.io/pdf/limeqo-poster.pdf) 
 
+<details class="tldr" markdown="1">
+<summary>Can we learn good decisions across an entire workload without exhaustively evaluating every possibility?</summary>
+
 *Learning good optimization decisions can require many expensive system executions. **LimeQO treats an entire workload as a partially observed low-rank matrix**, allowing information from a small number of executions to generalize across queries and guide where exploration is most useful, dramatically reducing learning overhead while avoiding regressions. **Try it out at [LimeQO](https://github.com/zixy17/LimeQO/blob/main/limeqo.ipynb)**.*
+
+</details>
 
 **Theory-Level Autoformalization: From Isolated Statements to Unified Formal Knowledge Bases** \
 **ICML'26 Position Track (🔦Spotlight)** \
 Marcus J Min, Mike He, Zhaoyu Li, **Zixuan Yi**, Sharad Malik, Aarti Gupta, Xujie Si, Osbert Bastani 
 [[code]](https://github.com/marcusm117/Awesome-Autoformalization) [[paper]](https://arxiv.org/pdf/2607.13292)
 
-*Most autoformalization (turning informal math into machine-checkable formal math) research focuses on translating isolated statements, even though real formalization requires constructing the definitions, notation, lemmas, and dependencies around them. We argue for moving toward **theory-level autoformalization**: automatically building coherent formal libraries rather than solving individual translation problems in isolation.*
+<details class="tldr" markdown="1">
+<summary>Autoformalization should build theories, not just translate isolated statements.</summary>
+
+*Most autoformalization (turning informal math into machine-checkable formal math) assumes that the surrounding definitions, notation, lemmas, and dependencies already exist. We argue for **theory-level autoformalization**: constructing coherent formal libraries and their dependency structure, rather than treating each statement as an independent translation problem.*
+
+</details>
 
 
 **The Unreasonable Effectiveness of LLMs for Query Optimization.** \
 **ML4Systems@NeurIPS'24 (🔦Spotlight)** \
 Peter Akioyamen, **Zixuan Yi**, Ryan Marcus [[code]](https://github.com/peter-ai/LLMSteer)[[paper]](https://arxiv.org/pdf/2411.02862)[[talk]](https://neurips.cc/virtual/2024/103605) 
 
-*We explore a surprisingly simple way to use pretrained language-model representations for system decision making. **LLMSteer** embeds raw SQL queries using an LLM and trains a lightweight classifier to select optimization decisions, outperforming substantially more specialized approaches without requiring deep integration with database internals.*
+<details class="tldr" markdown="1">
+<summary>How much does a pretrained language model already know about the behavior of a SQL query?</summary>
+
+*Learned query optimizers often rely on specialized representations and database-specific features. **LLMSteer** shows that pretrained embeddings of raw SQL already contain useful signals for optimization: a lightweight classifier over these representations can steer an existing optimizer without complex model architectures or deep integration with database internals.*
+
+
+</details>
 
 ## Experiences
 
