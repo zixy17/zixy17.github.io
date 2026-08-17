@@ -9,9 +9,15 @@ image: /img/photo.jpg
 details.tldr {
   margin: 0 0 1.6em 0;
 }
-/* close the gap between a publication's author line and its TL;DR */
-p:has(+ details.tldr) {
-  margin-bottom: 0.2em;
+/* The theme gives every h2/p/ul a 20px bottom margin, which leaves a big gap
+   between a block and the line that introduces it. Pull the follower back up. */
+p + details.tldr {
+  margin-top: -17px;
+}
+h2 + ul, h2 + ol,
+h3 + ul, h3 + ol,
+p + ul, p + ol {
+  margin-top: -14px;
 }
 details.tldr > summary {
   cursor: pointer;
@@ -49,12 +55,12 @@ I’m always happy to chat about research, collaborations, or interesting proble
 
 ## Research Interests
 
-I work at the intersection of **machine learning and systems**: using ML to make systems more intelligent, and systems techniques to make AI applications **efficient and reliable in real-world environments**.
+I am broadly interested in building intelligent systems that are **efficient, adaptive, and reliable in real-world environments**. My previous works explored how **machine learning can make systems more intelligent**, and how **systems techniques can make AI applications more efficient and reliable**.
 
-Three questions run through my work:
-- **Learning & Adaptation:** How can systems learn from their own execution history and adapt to new workloads and feedback? *(LimeQO, LLMSteer)*
-- **Efficiency:** How can learning and decision-making stay cheap when every trial costs a real execution? *(LimeQO)*
-- **Reliability & Control:** How can we tell where an intelligent system went wrong, and repair just that part? *(Data Canvas)*
+I’m interested in three broad questions:
+- **Learning & Adaptation:** How can intelligent systems learn from experience and adapt to new tasks, environments, and feedback?
+- **Efficiency:** How can we make learning and decision-making efficient when computation, interaction, or evaluation is expensive?
+- **Reliability & Control:** How can we make intelligent systems easier to understand, steer, and correct when they make mistakes?
 
 
 ## Publications
