@@ -42,7 +42,7 @@ details.tldr > p {
 
 ## About Me
 
-👋 Hi! I am Zixuan (Eve) Yi, a third-year PhD student in CS at the University of Pennsylvania, advised by [Ryan Marcus](https://rmarcus.info/blog/) and [Zack Ives](https://www.cis.upenn.edu/~zives/). Before this, I earned my bachelor degree in CS from Tsinghua University.
+👋 Hi! I am Zixuan (Eve) Yi, a 4th-year PhD student in CS at the University of Pennsylvania, advised by [Ryan Marcus](https://rmarcus.info/blog/) and [Zack Ives](https://www.cis.upenn.edu/~zives/). Before this, I earned my bachelor degree in CS from Tsinghua University.
 
 I’m always happy to chat about research, collaborations, or interesting problems in ML and systems. Feel free to [reach out](mailto:zixy@upenn.edu)! 😄
 
