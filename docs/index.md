@@ -44,10 +44,9 @@ details.tldr > p {
 
 👋 Hi! I am Zixuan (Eve) Yi, a 4th-year PhD student in CS at the University of Pennsylvania, advised by [Ryan Marcus](https://rmarcus.info/blog/) and [Zack Ives](https://www.cis.upenn.edu/~zives/). Before this, I earned my bachelor degree in CS from Tsinghua University.
 
-I’m always happy to chat about research, collaborations, or interesting problems in ML and systems. Feel free to [reach out](mailto:zixy@upenn.edu)! 😄
+I’m always happy to chat about research, collaborations, or mentoring in ML and systems. Feel free to [reach out](mailto:zixy@upenn.edu)! 😄
 
 ## News
-- ☕️ **VLDB'26 (Aug 31 - Sep 4):** I’ll be in **Boston** for VLDB'26. DM me if you want to grab coffee and chat!
 - 🧋 **COLM'26 (October 6 - 9):** I’ll be in **SF** for COLM'26. Looking forward to meeting people interested in LLM agents, agentic systems, and related areas!
 - 🎉 **Data Canvas** was accepted to **COLM'26**! 
 - 🔦 **Theory-Level Autoformalization** was selected as a **Spotlight** at the **ICML'26 Position Track**.
