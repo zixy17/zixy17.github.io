@@ -67,7 +67,7 @@ I’m interested in three broad questions:
 **Data Canvas: A Provenance-Guided Harness for Agentic Data Engineering** \
 **COLM'26** \
 **Zixuan Yi**, Yuanming Shao, Shaun Wallace, Zachary Ives, Ryan Marcus \
-*Code and paper coming soon!*
+[[slides]](https://zixy17.github.io/pdf/datacanvas-slides.pdf)
 
 <details class="tldr" markdown="1">
 <summary>When an agent goes wrong, can we identify the responsible step and repair only what it affected?</summary>
