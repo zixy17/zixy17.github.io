@@ -11,7 +11,8 @@ details.tldr {
 }
 /* The theme gives every h2/p/ul a 20px bottom margin, which leaves a big gap
    between a block and the line that introduces it. Pull the follower back up. */
-p + details.tldr {
+p + details.tldr,
+.bibtex[hidden] + details.tldr {
   margin-top: -17px;
 }
 h2 + ul, h2 + ol,
@@ -38,6 +39,35 @@ details.tldr > p {
   font-style: italic;
   color: #555;
 }
+/* [cite] opens a copyable BibTeX box under the paper's link row */
+p + .bibtex {
+  position: relative;
+  margin-top: -14px;
+}
+.bibtex:not([hidden]) + details.tldr {
+  margin-top: 6px;
+}
+.bibtex > pre {
+  margin: 0;
+  padding-right: 64px;
+  font-size: 11px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.bibtex > button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 2px 8px;
+  font: 11px "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #267CB9;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.bibtex > button:hover { color: #069; border-color: #ccc; }
 </style>
 
 ## About Me
@@ -66,8 +96,8 @@ I’m interested in three broad questions:
 
 **Data Canvas: A Provenance-Guided Harness for Agentic Data Engineering** \
 **COLM'26** \
-**Zixuan Yi**, Yuanming Shao, Shaun Wallace, Zachary Ives, Ryan Marcus \
-[[slides]](https://zixy17.github.io/pdf/datacanvas-slides.pdf)
+**Zixuan Yi**, Yuanming Shao, Shaun Wallace, Zachary Ives, Ryan Marcus
+[[paper]](https://openreview.net/pdf?id=t89YKsfjKC)[[slides]](https://zixy17.github.io/pdf/datacanvas-slides.pdf) <a class="cite" href="/bib/datacanvas-colm26.bib">[cite]</a>
 
 <details class="tldr" markdown="1">
 <summary>When an agent goes wrong, can we identify the responsible step and repair only what it affected?</summary>
@@ -80,7 +110,7 @@ I’m interested in three broad questions:
 **Theory-Level Autoformalization: From Isolated Statements to Unified Formal Knowledge Bases** \
 **ICML'26 Position Track (🔦Spotlight)** \
 Marcus J Min, Mike He, Zhaoyu Li, **Zixuan Yi**, Sharad Malik, Aarti Gupta, Xujie Si, Osbert Bastani 
-[[code]](https://github.com/marcusm117/Awesome-Autoformalization) [[paper]](https://arxiv.org/pdf/2607.13292)
+[[code]](https://github.com/marcusm117/Awesome-Autoformalization) [[paper]](https://arxiv.org/pdf/2607.13292) <a class="cite" href="/bib/autoformalization-icml26.bib">[cite]</a>
 
 <details class="tldr" markdown="1">
 <summary>Autoformalization should build theories, not just translate isolated statements.</summary>
@@ -92,7 +122,7 @@ Marcus J Min, Mike He, Zhaoyu Li, **Zixuan Yi**, Sharad Malik, Aarti Gupta, Xuji
 
 **LimeQO: Low-Rank Learning for Offline Query Optimization.** \
 **SIGMOD'25** \
-**Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [[code]](https://github.com/zixy17/LimeQO)[[paper]](https://zixy17.github.io/pdf/limeqo_sigmod25.pdf)[[poster]](https://zixy17.github.io/pdf/limeqo-poster.pdf) 
+**Zixuan Yi**, Yao Tian, Zachary G. Ives, Ryan Marcus [[code]](https://github.com/zixy17/LimeQO)[[paper]](https://zixy17.github.io/pdf/limeqo_sigmod25.pdf)[[poster]](https://zixy17.github.io/pdf/limeqo-poster.pdf) <a class="cite" href="/bib/limeqo-sigmod25.bib">[cite]</a>
 
 <details class="tldr" markdown="1">
 <summary>Can we learn good decisions across an entire workload without exhaustively evaluating every possibility?</summary>
@@ -104,7 +134,7 @@ Marcus J Min, Mike He, Zhaoyu Li, **Zixuan Yi**, Sharad Malik, Aarti Gupta, Xuji
 
 **The Unreasonable Effectiveness of LLMs for Query Optimization.** \
 **ML4Systems@NeurIPS'24 (🔦Spotlight)** \
-Peter Akioyamen, **Zixuan Yi**, Ryan Marcus [[code]](https://github.com/peter-ai/LLMSteer)[[paper]](https://arxiv.org/pdf/2411.02862)[[talk]](https://neurips.cc/virtual/2024/103605) 
+Peter Akioyamen, **Zixuan Yi**, Ryan Marcus [[code]](https://github.com/peter-ai/LLMSteer)[[paper]](https://arxiv.org/pdf/2411.02862)[[talk]](https://neurips.cc/virtual/2024/103605) <a class="cite" href="/bib/llmsteer-ml4sys24.bib">[cite]</a>
 
 <details class="tldr" markdown="1">
 <summary>How much does a pretrained language model already know about the behavior of a SQL query?</summary>
@@ -124,3 +154,42 @@ Peter Akioyamen, **Zixuan Yi**, Ryan Marcus [[code]](https://github.com/peter-ai
 
 **Google** STEP Intern @ Google Search, 2021 Summer\
 *Built a human-in-the-loop analytics and evaluation pipeline combining expert feedback with NLP models.*
+
+<script>
+document.querySelectorAll('a.cite').forEach(function (link) {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    var row = link.closest('p');
+    var box = row.nextElementSibling;
+    if (box && box.classList.contains('bibtex')) {
+      box.hidden = !box.hidden;
+      return;
+    }
+    fetch(link.href)
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (bib) {
+        box = document.createElement('div');
+        box.className = 'bibtex';
+        var pre = document.createElement('pre');
+        pre.textContent = bib.trim();
+        var copy = document.createElement('button');
+        copy.type = 'button';
+        copy.textContent = 'Copy';
+        copy.addEventListener('click', function () {
+          navigator.clipboard.writeText(pre.textContent).then(function () {
+            copy.textContent = 'Copied!';
+            setTimeout(function () { copy.textContent = 'Copy'; }, 1500);
+          }, function () {
+            var range = document.createRange();
+            range.selectNodeContents(pre);
+            getSelection().removeAllRanges();
+            getSelection().addRange(range);
+          });
+        });
+        box.append(pre, copy);
+        row.after(box);
+      })
+      .catch(function () { window.location.href = link.href; });
+  });
+});
+</script>
